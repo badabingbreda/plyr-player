@@ -1,0 +1,29 @@
+@accent_color : #ff0000;
+
+& when ( iscolor( @accent_color ) ) {
+
+	.plyr--full-ui input[type=range] {
+
+		color: @accent_color;
+
+	}
+
+	.plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=true] {
+	    background: @accent_color;
+	    color: #fff;
+	}
+
+	.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+	    background: @accent_color;
+	    color: #fff;
+	}
+
+	.plyr__control--overlaid {
+		background-color: @accent_color;
+	}
+
+	.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+    	background: @accent_color;
+	}
+
+}
